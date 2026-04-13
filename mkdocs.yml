@@ -1,0 +1,79 @@
+site_name: DelgadoLearn
+site_description: Portal de aprendizaje de la empresa - Contenidos progresivos
+site_url: https://delgadolearn.github.io/
+repo_url: https://github.com/delgadolearn/delgadolearn
+repo_name: DelgadoLearn
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: es
+  locale: es
+  palette:
+    - scheme: light
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+    - scheme: dark
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.tooltips
+  icon:
+    repo: fontawesome/brands/github
+
+plugins:
+  - search:
+      lang: es
+      separator: '[\s\-_.]+'
+  - tags
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Cursos:
+    - Introducción: cursos/intro.md
+  - Estructura: estructura-carpetas.md
+  - Contribuir: contributing.md
+  - Comunidad: comunidad.md

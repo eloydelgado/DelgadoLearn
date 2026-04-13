@@ -1,6 +1,6 @@
 # DelgadoLearn
 
-Portal de aprendizaje autocontenido y colaborativo publicado en GitHub Pages.
+Portal de aprendizaje autocontenido y colaborativo publicado en GitHub Pages. 
 
 ## 🚀 Inicio Rápido
 
